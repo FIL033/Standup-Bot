@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# Logs
+*.out
+
+# Datebases
+*.db
+
+*.env
+*.sql
+
+bot/file_2.py
+bot/db.py
+bot/test.py
