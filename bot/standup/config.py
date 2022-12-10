@@ -9,4 +9,4 @@ PRODUCTION_CONFIG_DIR = CONFIGS_DIR / 'bot_production_config.env'
 
 
 
-DEBUG = True
+DEBUG = False

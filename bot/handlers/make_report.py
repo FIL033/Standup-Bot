@@ -48,7 +48,7 @@ async def cmd_report(message: Message, state: FSMContext):
 @router.message(Text(text="Пропускаю в этот раз"))
 @router.message(OrderReport.choose_submit_report)
 async def report_did(message: Message, state: FSMContext):
-    if message.from_user.id in BotConfig.WHITE_LIST or str(message.from_user.id) == config.admin_id.get_secret_value():
+    if message.from_user.id in config.white_list or str(message.from_user.id) == config.admin_id.get_secret_value():
         if message.text == available_report_type[0]:
             await state.set_state(OrderReport.what_are_you_doing)
             await message.answer(
